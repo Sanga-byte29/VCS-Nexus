@@ -4,7 +4,9 @@
   "description": "A highly professional and an Enterprise Level Github-like App with MERN Stack. Here I have learnt passport.js to implement social authentication to the Node.js apps.",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon backend/server.js"
+    "dev": "nodemon backend/server.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "node backend/server.js"
   },
   "type": "module",
   "keywords": [],
